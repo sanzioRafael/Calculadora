@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" blendMode="EXCLUSION" cache="false" cacheHint="QUALITY" disable="false" focusTraversable="false" prefHeight="454.0" prefWidth="418.0" xmlns:fx="http://javafx.com/fxml" fx:controller="calculadora.SampleController">
+  <children>
+    <TextField fx:id="fieldCampo" alignment="CENTER_RIGHT" blendMode="EXCLUSION" cache="false" disable="true" focusTraversable="false" layoutX="22.0" layoutY="14.0" opacity="1.0" prefHeight="50.0" prefWidth="381.9998779296875" text="" />
+    <Button fx:id="btnNove" layoutX="22.0" layoutY="107.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="9" textAlignment="CENTER">
+      <font>
+        <Font name="Gungsuh" size="20.0" fx:id="x1" />
+      </font>
+      <textFill>
+        <Color blue="1.000" green="0.400" red="0.000" fx:id="x2" />
+      </textFill>
+    </Button>
+    <Separator layoutX="0.0" layoutY="80.0" prefHeight="7.0" prefWidth="418.0" />
+    <Button fx:id="btnOito" font="$x1" layoutX="123.0" layoutY="107.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="8" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnSete" font="$x1" layoutX="224.0" layoutY="107.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="7" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnDiv" font="$x1" layoutX="323.0" layoutY="107.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text=":" textAlignment="CENTER" textFill="$x2" />
+    <Button id="btnSete" fx:id="btnSeis" font="$x1" layoutX="22.0" layoutY="178.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="6" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnCinco" font="$x1" layoutX="123.0" layoutY="178.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="5" textAlignment="CENTER" textFill="$x2" />
+    <Button id="btQuatro" fx:id="btnQuatro" font="$x1" layoutX="224.0" layoutY="178.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="4" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnMult" font="$x1" layoutX="323.0" layoutY="178.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="x" textAlignment="CENTER" textFill="$x2" />
+    <Button id="btQuatro" fx:id="btnTres" font="$x1" layoutX="22.0" layoutY="251.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.00009999999747" text="3" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnDois" font="$x1" layoutX="123.0" layoutY="251.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="2" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnUm" font="$x1" layoutX="224.0" layoutY="251.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="1" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnMenos" font="$x1" layoutX="323.0" layoutY="251.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="-" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnCompleteClear" font="$x1" layoutX="22.0" layoutY="323.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="AC" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnZero" font="$x1" layoutX="123.0" layoutY="323.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="0" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnClear" font="$x1" layoutX="224.0" layoutY="323.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="C" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnPlus" font="$x1" layoutX="323.0" layoutY="323.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="+" textAlignment="CENTER" textFill="$x2" />
+    <Button fx:id="btnEquals" font="$x1" layoutX="123.0" layoutY="390.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="80.0" text="=" textAlignment="CENTER" textFill="$x2" />
+    <Button id="btnCompleteClear" fx:id="btnOn" font="$x1" layoutX="22.0" layoutY="390.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="80.0" text="ON" textAlignment="CENTER" textFill="$x2" />
+    <Button id="btnCompleteClear" fx:id="btnOff" font="$x1" layoutX="323.0" layoutY="390.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="OFF" textAlignment="CENTER" textFill="$x2" />
+    <Button id="btnEquals" fx:id="btnPonto" font="$x1" layoutX="224.0" layoutY="390.0" mnemonicParsing="false" onAction="#actionPerfomance" prefHeight="50.0" prefWidth="79.0" text="." textAlignment="CENTER" textFill="$x2" />
+  </children>
+</AnchorPane>
