@@ -4,13 +4,17 @@
  */
 package calculadora;
 
+import java.awt.event.KeyEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -18,6 +22,8 @@ import javafx.scene.control.TextField;
  */
 public class SampleController implements Initializable {
 
+    @FXML
+    private AnchorPane painel;
     @FXML
     private Button btnNove, btnOito, btnSete, btnSeis, btnCinco, btnQuatro, btnTres, btnDois, btnUm, btnZero;
     @FXML
@@ -29,7 +35,7 @@ public class SampleController implements Initializable {
     private String campo1 = "", campo2 = "";
     private double conta;
     private char sinal;
-
+    
     @FXML
     private void actionPerfomance(ActionEvent evt) {
 
@@ -90,9 +96,8 @@ public class SampleController implements Initializable {
                 }
             }
         }
-
     }
-
+       
     private double operacaoCalculadora(char sinal, double v1, double v2) {
         double result = 0;
 
@@ -108,7 +113,7 @@ public class SampleController implements Initializable {
 
         return result;
     }
-
+    
     private String inserirNumeros(String campo, boolean valor, String s) {
         boolean ponto = temPonto(campo);
         if (valor) {
@@ -124,7 +129,7 @@ public class SampleController implements Initializable {
         }
         return campo;
     }
-
+    
     private boolean temPonto(String s) {
         boolean ponto = false;
         for (int i = 0; i < s.length(); i++) {
@@ -138,5 +143,6 @@ public class SampleController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
     }
 }
