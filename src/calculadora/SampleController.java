@@ -20,7 +20,7 @@ import javafx.scene.layout.AnchorPane;
  */
 public class SampleController implements Initializable {
     /*
-     *Controle de objetos que estão presente no layou da calculadora.
+     *Controle de objetos que estão presente no layout da calculadora.
      * Estes componetes como : AnchorPane, Button, TextField e outros precisam ser controlados.
      * Pois precisatemos dele mara manipularmos os seus metodos, caracteristicas, textos e outros.
      */
